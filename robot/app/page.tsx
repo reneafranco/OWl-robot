@@ -1,16 +1,20 @@
 // pages/index.js
+import Hero from "@/components/Hero";
+import { FloatingNav } from "@/components/ui/FloatingNav";
+import { navItems } from "@/data";
 import Spline from "@splinetool/react-spline";
 
 export default function Home() {
   return (
-    <main>
-      <h1>Mi Proyecto Spline en Next.js</h1>
-      <Spline
-        scene="https://prod.spline.design/iVFfKSjg8whvJclY/scene.splinecode"
-        style={{ width: "100%", height: "100vh", index = "-1" }}
-      />
-
-      <h1> HELLO HHEY EYYEY </h1>
+    <main
+      lassName="relative bg-black-100 flex justify-center
+    items-center flex-col mx-auto sm:px-10 px-5 overflow-clip"
+    >
+      <div className="max-w7xl w-full">
+        <FloatingNav navItems={navItems} />
+        <Hero />
+        <Hero />
+      </div>
     </main>
   );
 }
