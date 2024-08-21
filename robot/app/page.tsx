@@ -6,13 +6,8 @@ import Spline from "@splinetool/react-spline";
 
 export default function Home() {
   return (
-    <main
-      className="relative bg-black-100 flex justify-center
-    items-center flex-col mx-auto sm:px-10 px-5 overflow-clip"
-    >
-      <div className="max-w7xl w-full">
-        <FloatingNav navItems={navItems} />
-        <Hero />
+    <main className="h-screen w-full overflow-clip">
+      <div className="">
         <Hero />
       </div>
     </main>
