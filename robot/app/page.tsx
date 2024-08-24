@@ -5,19 +5,12 @@ import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Testimonials from "@/components/Testimonials";
+import PageTest from "@/components/PageTest";
 
 export default function Home() {
   return (
     <main className="h-screen w-full">
-      <div className="">
-        <NavBar />
-        <Hero />
-        <About />
-        <Projects />
-        <Testimonials />
-        <Contact />
-        <Footer />
-      </div>
+      <PageTest />
     </main>
   );
 }

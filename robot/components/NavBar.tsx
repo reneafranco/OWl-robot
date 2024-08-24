@@ -3,7 +3,7 @@ import { ModeToggle } from "./model-toggle";
 
 const NavBar = () => {
   return (
-    <header className="body-font sticky top-0 z-50 shadow-md bg-white dark:bg-customColor ">
+    <header className="body-font sticky top-0 z-[20] shadow-md bg-white dark:bg-customColor ">
       <div className="container mx-auto flex flex-wrap p-5 items-center">
         <a className="flex title-font font-medium items-center md:mb-0">
           <svg
