@@ -9,8 +9,10 @@ import PageTest from "@/components/PageTest";
 
 export default function Home() {
   return (
-    <main className="h-screen w-full">
-      <PageTest />
+    <main className=" w-full">
+      <Hero />
+      <Contact />
+      <Projects />
     </main>
   );
 }

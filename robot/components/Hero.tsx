@@ -4,7 +4,7 @@ import Spline from "@splinetool/react-spline/next";
 const Hero = () => {
   return (
     <div
-      className="grid sm:grid-cols-12 grid-cols-1  gap-4
+      className="grid  min-h-screen sm:grid-cols-12 grid-cols-1  gap-4
 
       mx-2"
     >
