@@ -45,6 +45,7 @@ const config = {
           "100": "#E4ECFF",
         },
         purple: "#CBACF9",
+        customColor: "#020817",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -208,4 +209,3 @@ function addVariablesForColors({ addBase, theme }: any) {
 }
 
 export default config;
-
