@@ -5,6 +5,7 @@ import About from "@/components/About";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import { navItems } from "@/data";
 import Spline from "@splinetool/react-spline";
+import Projects from "@/components/Projects";
 
 export default function Home() {
   return (
@@ -12,8 +13,8 @@ export default function Home() {
       <div className="">
         <NavBar />
         <Hero />
-
         <About />
+        <Projects />
       </div>
     </main>
   );
