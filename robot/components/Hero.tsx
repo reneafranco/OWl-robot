@@ -7,6 +7,7 @@ const Hero = () => {
       className="grid  min-h-screen sm:grid-cols-12 grid-cols-1  gap-4
 
       mx-2"
+      id="home"
     >
       <div
         className="min-h-[100px] bg-blue-500 rounded-lg shadow sm:col-span-2

@@ -11,8 +11,9 @@ export default function Home() {
   return (
     <main className=" w-full">
       <Hero />
-      <Contact />
+      <About />
       <Projects />
+      <Contact />
     </main>
   );
 }

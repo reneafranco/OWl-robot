@@ -1,11 +1,15 @@
 import React from "react";
 import { ModeToggle } from "./model-toggle";
+import Link from "next/link";
 
 const NavBar = () => {
   return (
-    <header className="sticky top-0 z-[20] body-font shadow-md bg-white dark:bg-customColor ">
+    <header className="sticky top-0 z-[20] body-font  bg-white dark:bg-customColor ">
       <div className="container mx-auto flex flex-wrap p-5 items-center">
-        <a className="flex title-font font-medium items-center md:mb-0">
+        <Link
+          href="/"
+          className="flex title-font font-medium items-center md:mb-0"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -22,12 +26,18 @@ const NavBar = () => {
           </svg>
 
           <span className="ml-3 text-xl sm:block hidden">Rene Project</span>
-        </a>
+        </Link>
 
         <nav className="flex-grow flex items-center justify-center">
-          <a className="mr-5 hover:text-blue-500">Home</a>
-          <a className="mr-5 hover:text-blue-500">About</a>
-          <a className="mr-5 hover:text-blue-500">Contact</a>
+          <Link href="/" className="mr-5 hover:text-blue-500">
+            Home
+          </Link>
+          <Link href="#about" className="mr-5 hover:text-blue-500">
+            About
+          </Link>
+          <Link href="#contact" className="mr-5 hover:text-blue-500">
+            Contact
+          </Link>
         </nav>
         <div className="flex items-center ml-auto ">
           <ModeToggle />
