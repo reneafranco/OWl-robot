@@ -11,7 +11,6 @@ const page = ({ params }: { params: { slug: string } }) => {
   if (!city) {
     return <p>Not Found </p>;
   }
-
   return (
     <section className="body-font overflow-hidden">
       <div className="container px-5 py-24 mx-auto">
