@@ -10,11 +10,11 @@ const Hero = () => {
       id="home"
     >
       <div
-        className="min-h-[100px] bg-blue-500 rounded-lg shadow sm:col-span-2
+        className="min-h-[100px] sm:col-span-2
         sm:block hidden"
       ></div>
       <div
-        className="relative min-h-[100px] bg-blue-500 rounded-lg shadow sm:col-span-8 
+        className="relative min-h-[100px] sm:col-span-8 
         sm:block"
       >
         <div className="mt-4 relative z-10">
@@ -25,7 +25,7 @@ const Hero = () => {
         </div>
       </div>
       <div
-        className="min-h-[100px] bg-blue-500 rounded-lg shadow sm:col-span-2
+        className="min-h-[100px] sm:col-span-2
         sm:block hidden"
       ></div>
     </div>
