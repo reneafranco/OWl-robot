@@ -35,8 +35,8 @@ const NavBar = () => {
           <Link href="/cities" className="mr-5 hover:text-blue-500">
             Cities
           </Link>
-          <Link href="#contact" className="mr-5 hover:text-blue-500">
-            Contact
+          <Link href="/about" className="mr-5 hover:text-blue-500">
+            About
           </Link>
         </nav>
         <div className="flex items-center ml-auto ">
