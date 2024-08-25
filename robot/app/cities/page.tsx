@@ -1,11 +1,10 @@
-// cities/pages.tsx
 import React from "react";
 import Image from "next/image";
 import { CITIES } from "../../data/index";
 
-const Page = () => {
+const Page: React.FC = () => {
   return (
-    <section className=" body-font">
+    <section className="body-font">
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-wrap -m-4">
           {CITIES.map((city) => (
@@ -19,15 +18,18 @@ const Page = () => {
                   height={400}
                 />
                 <div className="p-6">
-                  <h2 className="tracking-widest text-xs title-font text-indigo-500  font-medium  mb-1">
+                  <h2 className="tracking-widest text-xs title-font text-indigo-500 font-medium mb-1">
                     CATEGORY
                   </h2>
-                  <h1 className="title-font text-lg font-medium  mb-3">
+                  <h1 className="title-font text-lg font-medium mb-3">
                     {city.name}
                   </h1>
                   <p className="leading-relaxed mb-3">{city.description}</p>
                   <div className="flex items-center flex-wrap">
-                    <a className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
+                    <a
+                      href={`/cities/${city.id}`}
+                      className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0"
+                    >
                       Learn More
                       <svg
                         className="w-4 h-4 ml-2"
