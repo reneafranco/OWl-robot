@@ -38,3 +38,33 @@ export const CITIES: City[] = [
     imageUrl: "https://dummyimage.com/720x600/222/fff",
   },
 ];
+
+export const cities = [
+  {
+    id: 1,
+    category: "Category 1",
+    title: "City One",
+    description: "Description for City One.",
+    link: "/city-one",
+    icon: "1.2K",
+    reviews: 6,
+  },
+  {
+    id: 2,
+    category: "Category 2",
+    title: "City Two",
+    description: "Description for City Two.",
+    link: "/city-two",
+    icon: "2.3K",
+    reviews: 12,
+  },
+  {
+    id: 3,
+    category: "Category 3",
+    title: "City Two",
+    description: "Description for City Two.",
+    link: "/city-two",
+    icon: "2.3K",
+    reviews: 12,
+  },
+];
