@@ -5,7 +5,7 @@ import { CITIES } from "../../data/index";
 
 const Page = () => {
   return (
-    <section className="text-gray-600 body-font">
+    <section className=" body-font">
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-wrap -m-4">
           {CITIES.map((city) => (
@@ -19,10 +19,10 @@ const Page = () => {
                   height={400}
                 />
                 <div className="p-6">
-                  <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
+                  <h2 className="tracking-widest text-xs title-font text-indigo-500  font-medium  mb-1">
                     CATEGORY
                   </h2>
-                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
+                  <h1 className="title-font text-lg font-medium  mb-3">
                     {city.name}
                   </h1>
                   <p className="leading-relaxed mb-3">{city.description}</p>
