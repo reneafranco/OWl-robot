@@ -24,39 +24,90 @@ const page = ({ params }: { params: { slug: string } }) => {
             </h1>
             <div className="flex mb-4">
               <a className="flex-grow text-blue-500 border-b-2 border-blue-500 py-2 text-lg px-1">
-                Description
+                City Information
               </a>
             </div>
-            <p className="leading-relaxed mb-4 text-gray-600 dark:text-gray-300">
-              {city.description}
-            </p>
-            <div className="flex border-t border-gray-200 dark:border-gray-700 py-2">
-              <span className="text-gray-500 dark:text-gray-400">Color</span>
-              <span className="ml-auto text-gray-900 dark:text-gray-100">
-                data
-              </span>
-            </div>
-            <div className="flex border-t border-gray-200 dark:border-gray-700 py-2">
-              <span className="text-gray-500 dark:text-gray-400">Size</span>
-              <span className="ml-auto text-gray-900 dark:text-gray-100">
-                data
-              </span>
-            </div>
-            <div className="flex border-t border-b mb-6 border-gray-200 dark:border-gray-700 py-2">
-              <span className="text-gray-500 dark:text-gray-400">Quantity</span>
-              <span className="ml-auto text-gray-900 dark:text-gray-100">
-                data
-              </span>
-            </div>
+            <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
+              <thead>
+                <tr>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
+                    Attribute
+                  </th>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
+                    Details
+                  </th>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
+                    Additional Info
+                  </th>
+                </tr>
+              </thead>
+              <tbody className="bg-white divide-y divide-gray-200 dark:bg-gray-800 dark:divide-gray-700">
+                <tr>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 dark:text-gray-100">
+                    Population
+                  </td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">
+                    {city.population}
+                  </td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">
+                    {/* You can add additional information here */}
+                  </td>
+                </tr>
+                <tr>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 dark:text-gray-100">
+                    Year Incorporated
+                  </td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">
+                    {city.yearIncorporated}
+                  </td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">
+                    {/* You can add additional information here */}
+                  </td>
+                </tr>
+                <tr>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 dark:text-gray-100">
+                    Region
+                  </td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">
+                    {city.region}
+                  </td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">
+                    {/* You can add additional information here */}
+                  </td>
+                </tr>
+                <tr>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 dark:text-gray-100">
+                    Classification
+                  </td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">
+                    {city.classification}
+                  </td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">
+                    {/* You can add additional information here */}
+                  </td>
+                </tr>
+                <tr>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 dark:text-gray-100">
+                    Average Income
+                  </td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">
+                    {city.averageIncome}
+                  </td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">
+                    {/* You can add additional information here */}
+                  </td>
+                </tr>
+              </tbody>
+            </table>
             <div className="flex">
               <button className="flex ml-auto text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">
-                <Link href="/cities"> Go Back</Link>
+                <Link href="/cities">Go Back</Link>
               </button>
             </div>
           </div>
           <div className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded">
             <Image
-              alt="ecommerce"
+              alt="City Image"
               src={city.imageUrl}
               layout="responsive"
               width={400}
