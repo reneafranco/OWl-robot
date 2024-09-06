@@ -11,7 +11,7 @@ const State = () => {
             <div className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded relative">
               <Image
                 alt="Iowa"
-                src="https://dummyimage.com/400x400"
+                src="/Iowa-state.jpg"
                 layout="fill"
                 objectFit="cover"
                 className="rounded"

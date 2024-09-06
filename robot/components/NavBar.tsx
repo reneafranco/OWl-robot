@@ -25,17 +25,17 @@ const NavBar = () => {
             />
           </svg>
 
-          <span className="ml-3 text-xl sm:block hidden">Rene Project</span>
+          <span className="ml-3 text-xl sm:block hidden">Iowa State</span>
         </Link>
 
         <nav className="flex-grow flex items-center justify-center">
-          <Link href="/" className="mr-5 hover:text-blue-500">
+          <Link href="/" className="mr-5 nav-link-hover">
             Home
           </Link>
-          <Link href="/cities" className="mr-5 hover:text-blue-500">
+          <Link href="/cities" className="mr-5 nav-link-hover">
             Cities
           </Link>
-          <Link href="/about" className="mr-5 hover:text-blue-500">
+          <Link href="/about" className="mr-5  nav-link-hover">
             About
           </Link>
         </nav>

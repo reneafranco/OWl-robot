@@ -2,6 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+#custom-font {
+  font-family: sans-serif;
+}
+
+.nav-link-hover:hover {
+  color: #3b82f6;
+  transition: color 0.3;
+}
+
+.hero-container {
+  position: relative;
+}
+
+.custom-animated-component {
+  position: absolute;
+}
+
+a {
+  text-decoration: none;
+}
+
+.float-left {
+  float: left;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -67,4 +92,3 @@
     @apply bg-background text-foreground;
   }
 }
-

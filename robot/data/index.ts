@@ -1,6 +1,7 @@
 export interface City {
   id: string;
   name: string;
+  description: string;
   population: string;
   yearIncorporated: string;
   region: string;
@@ -15,42 +16,48 @@ export interface City {
 export const CITIES: City[] = [
   {
     id: "1",
-    name: "Metropolis",
-    population: "1,000,000",
-    yearIncorporated: "1850",
+    name: "Des Moines",
+    description:
+      "Capital city of Iowa, known for its vibrant cultural scene and bustling downtown.",
+    population: "214,000",
+    yearIncorporated: "1851",
     region: "Central",
     classification: "Urban",
     averageIncome: "30% above state average",
-    imageUrl: "https://dummyimage.com/720x600/000/fff",
-    altText: "View of Metropolis skyline",
-    populationDensity: "2,500 people/km²",
-    area: "400 km²",
+    imageUrl: "/des-moines.webp",
+    altText: "View of Des Moines skyline",
+    populationDensity: "1,750 people/km²",
+    area: "217 km²",
   },
   {
     id: "2",
-    name: "Smalltown",
-    population: "15,000",
-    yearIncorporated: "1900",
-    region: "Southern",
-    classification: "Suburban",
+    name: "Cedar Rapids",
+    description:
+      "A city known for its historic downtown and vibrant arts community.",
+    population: "133,000",
+    yearIncorporated: "1849",
+    region: "Eastern",
+    classification: "Urban",
     averageIncome: "10% below state average",
-    imageUrl: "https://dummyimage.com/720x600/111/fff",
-    altText: "Scenic view of Smalltown",
-    populationDensity: "300 people/km²",
-    area: "50 km²",
+    imageUrl: "/cedar-rapids.jpg",
+    altText: "View of Cedar Rapids skyline",
+    populationDensity: "1,200 people/km²",
+    area: "174 km²",
   },
   {
     id: "3",
-    name: "Village",
-    population: "5,000",
-    yearIncorporated: "2000",
-    region: "Northern",
-    classification: "Rural",
+    name: "Davenport",
+    description:
+      "Part of the Quad Cities region, known for its historical landmarks and riverfront.",
+    population: "102,000",
+    yearIncorporated: "1836",
+    region: "Eastern",
+    classification: "Urban",
     averageIncome: "5% below state average",
-    imageUrl: "https://dummyimage.com/720x600/222/fff",
-    altText: "Countryside view of Village",
-    populationDensity: "50 people/km²",
-    area: "100 km²",
+    imageUrl: "/davenport.jpeg",
+    altText: "View of Davenport skyline",
+    populationDensity: "950 people/km²",
+    area: "160 km²",
   },
 ];
 
