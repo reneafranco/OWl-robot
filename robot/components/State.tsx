@@ -10,7 +10,7 @@ const State = () => {
           <div className="lg:w-4/5 mx-auto flex flex-wrap">
             <div className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded relative">
               <Image
-                alt="ecommerce"
+                alt="Iowa"
                 src="https://dummyimage.com/400x400"
                 layout="fill"
                 objectFit="cover"
@@ -19,45 +19,48 @@ const State = () => {
             </div>
             <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
               <h2 className="text-sm title-font tracking-widest text-gray-500 dark:text-gray-400">
-                BRAND NAME
+                City of Joy
               </h2>
               <h1 className="text-3xl title-font font-medium mb-1 text-gray-900 dark:text-gray-100">
-                The Catcher in the Rye
+                Iowa State
               </h1>
               <p className="leading-relaxed pt-6 sm:text-xl text-gray-600 dark:text-gray-300">
-                Fam locavore kickstarter distillery. Mixtape chillwave tumeric
-                sriracha taximy chia microdosing tilde DIY. XOXO fam indxgo
-                juiceramps cornhole raw denim forage brooklyn. Everyday carry +1
-                seitan poutine tumeric. Gastropub blue bottle austin listicle
-                pour-over, neutra jean shorts keytar banjo tattooed umami
-                cardigan.
+                Iowa, located in the Midwestern region of the United States, is
+                known for its rich agricultural heritage and vibrant cultural
+                scene. The state features expansive farmlands, historic small
+                towns, and a commitment to education and innovation. Iowa offers
+                a blend of natural beauty and bustling urban centers, making it
+                a unique and dynamic place to live and visit.
               </p>
-              <div className="pt-3">
+              <div className="pt-3  text-gray-600 dark:text-gray-300">
                 <ol className="list-decimal pl-5 mb-2">
-                  <li>First ordered list item</li>
-                  <li>Second ordered list item</li>
-                  <li>Third ordered list item</li>
+                  <li>Population: Over 3 million</li>
+                  <li>Capital: Des Moines</li>
+                  <li>
+                    Known for: Agriculture, particularly corn and soybeans
+                  </li>
                 </ol>
                 <ul className="list-disc pl-5 mb-4">
-                  <li>First unordered list item</li>
-                  <li>Second unordered list item</li>
-                  <li>Third unordered list item</li>
+                  <li>Historic landmarks such as the Iowa State Capitol</li>
+                  <li>Vibrant cultural festivals and fairs</li>
+                  <li>Beautiful natural parks and recreational areas</li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section className="text-gray-600 body-font dark:text-gray-300 ">
+      <section className="text-gray-600 body-font dark:text-gray-300">
         <div className="container px-5 mx-auto">
           <div className="text-center mb-20">
             <h1 className="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 dark:text-gray-100 mb-4">
-              Raw Denim Heirloom Man Braid
+              Discover the Beauty of Iowa
             </h1>
             <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
-              Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-              taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh
-              mi pug.
+              Iowa, known for its picturesque landscapes and charming small
+              towns, offers a unique blend of natural beauty and vibrant
+              culture. From rolling farmlands to bustling urban centers, Iowa is
+              a place where tradition meets modernity.
             </p>
           </div>
           <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
@@ -76,7 +79,7 @@ const State = () => {
                   <path d="M22 4L12 14.01l-3-3"></path>
                 </svg>
                 <span className="title-font font-medium">
-                  Authentic Cliche Forage
+                  Rolling Farmlands
                 </span>
               </div>
             </div>
@@ -95,7 +98,7 @@ const State = () => {
                   <path d="M22 4L12 14.01l-3-3"></path>
                 </svg>
                 <span className="title-font font-medium">
-                  Kinfolk Chips Snackwave
+                  Charming Small Towns
                 </span>
               </div>
             </div>
@@ -114,7 +117,7 @@ const State = () => {
                   <path d="M22 4L12 14.01l-3-3"></path>
                 </svg>
                 <span className="title-font font-medium">
-                  Coloring Book Ethical
+                  Vibrant Cultural Scene
                 </span>
               </div>
             </div>
@@ -133,7 +136,7 @@ const State = () => {
                   <path d="M22 4L12 14.01l-3-3"></path>
                 </svg>
                 <span className="title-font font-medium">
-                  Typewriter Polaroid Cray
+                  Scenic Trails and Parks
                 </span>
               </div>
             </div>
@@ -152,7 +155,7 @@ const State = () => {
                   <path d="M22 4L12 14.01l-3-3"></path>
                 </svg>
                 <span className="title-font font-medium">
-                  Pack Truffaut Blue
+                  Historical Landmarks
                 </span>
               </div>
             </div>
@@ -171,7 +174,7 @@ const State = () => {
                   <path d="M22 4L12 14.01l-3-3"></path>
                 </svg>
                 <span className="title-font font-medium">
-                  The Catcher In The Rye
+                  Friendly Communities
                 </span>
               </div>
             </div>
@@ -194,6 +197,7 @@ const State = () => {
                     {city.description}
                   </p>
                   <a
+                    target="_blank"
                     href={city.link}
                     className="text-blue-500 inline-flex items-center dark:text-blue-400"
                   >

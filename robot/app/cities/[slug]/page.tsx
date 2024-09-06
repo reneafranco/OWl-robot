@@ -50,7 +50,7 @@ const page = ({ params }: { params: { slug: string } }) => {
                     {city.population}
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">
-                    {/* You can add additional information here */}
+                    {city.populationDensity}
                   </td>
                 </tr>
                 <tr>
@@ -61,7 +61,7 @@ const page = ({ params }: { params: { slug: string } }) => {
                     {city.yearIncorporated}
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">
-                    {/* You can add additional information here */}
+                    {city.area}
                   </td>
                 </tr>
                 <tr>
@@ -71,9 +71,6 @@ const page = ({ params }: { params: { slug: string } }) => {
                   <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">
                     {city.region}
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">
-                    {/* You can add additional information here */}
-                  </td>
                 </tr>
                 <tr>
                   <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 dark:text-gray-100">
@@ -82,9 +79,6 @@ const page = ({ params }: { params: { slug: string } }) => {
                   <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">
                     {city.classification}
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">
-                    {/* You can add additional information here */}
-                  </td>
                 </tr>
                 <tr>
                   <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 dark:text-gray-100">
@@ -92,9 +86,6 @@ const page = ({ params }: { params: { slug: string } }) => {
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">
                     {city.averageIncome}
-                  </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">
-                    {/* You can add additional information here */}
                   </td>
                 </tr>
               </tbody>
